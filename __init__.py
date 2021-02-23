@@ -4,7 +4,7 @@ def openfido(options,stream):
 
 	sys.path.append(f"/usr/local/bin")
 	if not os.path.exists(f"/usr/local/bin/numpy_cli.py"):
-		raise Exception(f"numpy_cli not install (/usr/local/bin/numpy not found)")
+		raise Exception(f"numpy_cli not installed (/usr/local/bin/numpy not found)")
 	spec = importlib.util.spec_from_file_location("numpy_cli","/usr/local/bin/numpy_cli.py")
 	module = importlib.util.module_from_spec(spec)
 	spec.loader.exec_module(module)
