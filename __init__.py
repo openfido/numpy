@@ -1,3 +1,16 @@
+"""numpy - OpenFIDO numpy pipeline
+
+This pipeline provides access to the full numpy library in OpenFIDO.
+
+INPUTS
+
+	The structure of inputs depends on the numpy function called.  See numpy for details.
+
+OUTPUTS
+
+	The structure of outputs depends on the numpy function called.  See numpy for details.
+
+"""
 import sys, os, importlib
 
 def openfido(options,stream):
